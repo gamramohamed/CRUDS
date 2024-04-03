@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(22, 22, 22);
+  
+}
+.all{
+  width: 80%;
+  margin: auto;
+}
+.head{
+  text-align: center;
+  margin: 10px 0;
+  line-height: 38px;
+}
+INPUT{
+  width: 100%;
+  height: 35px;
+  background-color: rgb(10, 10, 10);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  margin: 4px 0;
+  padding: 4px;
+}
+input:hover{
+  background-color: #000000;
+  transform: scale(1.02);
+}
+#title,#count,#search{
+  width: 99.2%;
+}
+.product input{
+  width: 21%;
+}
+#category{
+  width: 100%;
+  background-color: rgb(10, 10, 10);
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  margin: 4px 0;
+  padding: 4px;
+}
+#category:hover{
+  background-color: #000000;
+  transform: scale(1.02);
+}
+#Total{
+  background-color: rgb(41, 10, 10);
+  padding: 11px 13PX;
+  border-radius: 5px;
+}
+#Total::before{
+  content: 'Total:';
+}
+button{
+  background-color: rgb(51, 15, 15);
+  border: none;
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 20PX;
+}
+button:hover{
+  background-color: rgb(41, 10, 10);
+  transform: scale(1.02);
+  transition: 0.1s;
+}
+.Search{
+  display: flex;
+  justify-content: space-between;
+}
+.Search button{
+  width: 45%;
+}
+table{
+  width: 100%;
+  text-align: center;
+}
+th,td{
+  padding: 5px;
+}

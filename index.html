@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CRUD.css" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="head">
+        <h1>CRUD</h1>
+        <h3>PRODUCT MANAGMENT SYSTEM</h3>
+      </div>
+      <div class="inputs">
+        <INPUT placeholder="product name" id="title"></INPUT>
+        <div class="product">
+          <INPUT onkeyup="Total()" type="number" placeholder="price" id="price"></INPUT>
+          <INPUT onkeyup="Total()" type="number" placeholder="taxes" id="taxes"></INPUT>
+          <INPUT onkeyup="Total()" type="number" placeholder="ads" id="ads"></INPUT>
+          <INPUT onkeyup="Total()" type="number" placeholder="discount" id="discount"></INPUT>
+          <small style="display: inline-block;" id="Total"></small style="display: inline-block;">
+        </div>
+        <INPUT placeholder="count" type="number" id="count"></INPUT>
+        <select id="category" name="category">
+          <option value="phone" selected>Phone</option>
+          <option value="laptop">Laptop</option>
+          <option value="smartWatch">Smart Watch</option>
+          <option value="ecouteurBluetooth">Ecouteur Bluetooth</option>
+        </select>
+
+        <button onclick="
+          create()" id="creatBtn">Creat</button>
+      </div>
+
+      <div class="outputs">
+        <input type="text" name="" id="search" placeholder="Search" onkeyup="searchData(this.value)">
+        <div class="Search">
+          <button onclick="getSearchMood(this.id)" id="SearchByTitle">Search By Title</button>
+          <button onclick="getSearchMood(this.id)" id="SearchByCategory">Search By Category</button>          
+        </div>
+
+        <div id="deleteAllDiv" style="margin-top: 18px ; margin-bottom: 8px;">
+             
+        </div>
+
+        <table>
+          <thead>
+            <th>TECKET</th>
+            <th>Title</th>
+            <th>PRICE</th>
+            <th>TAXES</th>
+            <th>ADS</th>
+            <th>DISCOUNT</th>
+            <th>TOTAL</th>
+            <th>CATEGORY</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+          </thead>
+          <tbody id='tbody'>
+           
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="CRUD.js"></script>
+  </body>
+</html>
