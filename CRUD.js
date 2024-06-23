@@ -193,7 +193,7 @@ function update(i) {
 
 // delete All data
 function deleteAll() {
-  localStorage.clear;
+  localStorage.clear();
   proData.splice(0);
   addData();
 }
